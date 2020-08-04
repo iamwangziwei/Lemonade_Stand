@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> showreport </title>
+</head>
+
+<body  bgcolor="#ebf7fc" >
+    
+    <div style = "text-align:center">
+    <table border="0" cellspacing = "10">
+        <tr><th>Date</th><th>Items Sold</th><th>Quantity </th><th>Total Price</th><th>Commission Earned</th></tr>
+        
+        {% for user in recordText %}
+            <tr>
+            <td>{{ user.date }}</td>
+            <td>{{ user.item }}</td>
+            <td>{{ user.quantity }}</td>
+            <td>{{ user.price }}</td>
+            <td>{{ user.earn }}</td>
+            </tr>
+        {% endfor %}
+        
+    </table>
+    <div>
+    
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    
+   
+	<a href="/sales/form/">Go to form</a>
+    <p></p> 
+    <a href="/sales">Go to index</a>
+</body>
+
+</html>

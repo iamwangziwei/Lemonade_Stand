@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    
+</head>
+<center>
+<body  bgcolor="#ebf7fc">
+    <form action="/sales/form/" method="post">
+        {% csrf_token %}
+        <br></br>
+    	<br></br>
+    	<br></br>
+   	 	<br></br>
+   	 	<br></br>
+    	<br></br>
+    	<br></br>
+      
+        Name:<input type="text" name="name" value="" list =  "namelist"/>
+    	<datalist id = "namelist">
+                <option>Jeff Terry</option>
+                <option>Thomas Black</option>
+                <option>John Rice</option>
+                <option>Larry Long</option>
+        </datalist>
+    	<br></br>
+   		 Beverage:<input type="text" name="beverage" value="" list =  "belist"/>
+    
+    	<datalist id = "belist">
+                <option>Fresh Lemon Lemonade</option>
+                <option>Orange & Lemon Splash</option>
+                <option>Sugary Shocker</option>
+                <option>Wild Whiskey Whack</option>
+        </datalist>
+        <br></br>
+        Quantity of sale:<input type="text" name="quantity" value=""/>
+        <br></br>
+        
+    <input type="submit" value="submit" onclick="func()"/>    
+    <span style="color:red;">{{ error_msg }}</span>
+ 
+    
+    </form>
+    <p></p> 
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    
+    <a href="/sales/report/">Go to report</a>
+    <p></p> 
+    <a href="/sales">Go to index</a>
+
+</body></center>
+</html>
